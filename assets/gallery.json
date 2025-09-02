@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "src": "/assets/images/placeholder1.jpg",
+      "caption": "Replace with your image"
+    },
+    {
+      "src": "/assets/images/placeholder2.jpg",
+      "caption": "Replace with your image"
+    },
+    {
+      "src": "/assets/images/placeholder3.jpg",
+      "caption": "Replace with your image"
+    }
+  ]
+}

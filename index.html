@@ -1,18 +1,80 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home - Saroj Poudyal</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Saroj Poudyal | 2D Materials, Optoelectronics, van der Waals Heterostructures" />
+  <title>Dr. Saroj Poudyal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-<body>
-  <h1>Welcome to Saroj Poudyal's Website</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Me</a> |
-    <a href="bio.html">Bio</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="gallery.html">Gallery</a>
-  </nav>
-  <p>This is the homepage of Saroj Poudyal.</p>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/index.html" class="text-xl font-bold">Dr. Saroj Poudyal</a>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a class="navlink" href="/bio.html">Bio</a>
+        <a class="navlink" href="/research.html">Research & Projects</a>
+        <a class="navlink" href="/publications.html">Publications</a>
+        <a class="navlink" href="/gallery.html">Gallery</a>
+        <a class="navbtn" href="/assets/cv/CV.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
+  <main class="min-h-screen">
+
+<section class="bg-gradient-to-b from-white to-gray-100">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">2D Materials • Optoelectronics • Heterostructures</h1>
+      <p class="mt-4 text-lg text-gray-700">I investigate exciton dynamics in transition metal dichalcogenides (TMDCs), van der Waals heterostructures, and low-power memristive devices, combining cleanroom nanofabrication with advanced optical spectroscopy.</p>
+      <div class="mt-6 flex gap-3 flex-wrap">
+        <a href="/publications.html" class="btn">View Publications</a>
+        <a href="/research.html" class="btn-secondary">Explore Research</a>
+        <a href="/bio.html" class="btn-secondary">About Me</a>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="/assets/images/portrait_placeholder.jpg" alt="Portrait" class="rounded-xl w-full object-cover">
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-10">
+  <h2 class="section-title">Highlights</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card">
+      <h3 class="card-title">Interlayer Excitons</h3>
+      <p class="card-text">Room-temperature, momentum-direct interlayer excitons in TMDC–PbI₂ heterostructures; twist-angle independent signatures.</p>
+      <a class="text-blue-600 underline" href="/research.html#interlayer-excitons">Learn more</a>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Anisotropic ReS₂</h3>
+      <p class="card-text">Stacking and layer-parity dependent photoluminescence; polarization-resolved optical response linked with crystal anisotropy.</p>
+      <a class="text-blue-600 underline" href="/research.html#res2-anisotropy">Learn more</a>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Memristive Devices</h3>
+      <p class="card-text">Resistive switching in MoO₂–MoS₂ core–shell nanowire devices; toward neuromorphic applications.</p>
+      <a class="text-blue-600 underline" href="/research.html#memristors">Learn more</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center md:justify-between gap-2">
+      <p>© 2025 Saroj Poudyal</p>
+      <div class="space-x-4">
+        <a href="mailto:spsarojpoudyal@gmail.com" class="underline">Email</a>
+        <a href="https://scholar.google.com" class="underline">Google Scholar</a>
+        <a href="https://www.researchgate.net" class="underline">ResearchGate</a>
+        <a href="https://www.linkedin.com" class="underline">LinkedIn</a>
+        <a href="https://github.com" class="underline">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

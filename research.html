@@ -25,51 +25,38 @@
   <main class="min-h-screen">
 
 <section class="max-w-6xl mx-auto px-4 py-12">
-  <h1 class="page-title">Publications</h1>
+  <h1 class="page-title">Research & Projects</h1>
+  <div class="grid md:grid-cols-2 gap-6">
+    <article id="interlayer-excitons" class="card">
+      <h2 class="card-title">Interlayer Excitons in TMDC–PbI₂ vdW Heterostructures</h2>
+      <p class="card-text"><!-- Paste exact project text from your Google Sites here. --></p>
+      <ul class="bullets">
+        <li>Momentum-direct emission at room temperature</li>
+        <li>Twist-angle independent behavior</li>
+        <li>Correlative optical spectroscopy</li>
+      </ul>
+    </article>
 
-  <div id="pubs" class="space-y-8">
-    <div class="card">
-      <h2 class="card-title">Journal Articles</h2>
-      <div id="pubs-journals" class="space-y-4">
-        <!-- Auto-filled from publications.json -->
-      </div>
-    </div>
+    <article id="res2-anisotropy" class="card">
+      <h2 class="card-title">Stacking & Layer-Parity Dependent PL in ReS₂</h2>
+      <p class="card-text"><!-- Paste exact project text from your Google Sites here. --></p>
+      <ul class="bullets">
+        <li>Angle-resolved PL and SHG</li>
+        <li>Anisotropy and stacking (AA vs AB)</li>
+        <li>Thin vs bulk behavior</li>
+      </ul>
+    </article>
 
-    <div class="card">
-      <h2 class="card-title">Conferences & Posters</h2>
-      <div id="pubs-conferences" class="space-y-4">
-        <!-- Auto-filled from publications.json -->
-      </div>
-    </div>
+    <article id="memristors" class="card">
+      <h2 class="card-title">Memristive Devices (MoO₂–MoS₂ Core–Shell)</h2>
+      <p class="card-text"><!-- Paste exact project text from your Google Sites here. --></p>
+      <ul class="bullets">
+        <li>Resistive switching mechanisms</li>
+        <li>Neuromorphic hardware direction</li>
+      </ul>
+    </article>
   </div>
-
-  <p class="mt-8 text-sm text-gray-500">Last updated: September 01, 2025</p>
 </section>
-<script>
-  document.addEventListener('DOMContentLoaded', async () => {
-    try {
-      const res = await fetch('/assets/publications.json');
-      const data = await res.json();
-      const journals = data.journals || [];
-      const confs = data.conferences || [];
-      const jwrap = document.getElementById('pubs-journals');
-      const cwrap = document.getElementById('pubs-conferences');
-
-      function itemHTML(p) {
-        const doi = p.doi ? `<a class="underline" href="https://doi.org/${p.doi}">doi:${p.doi}</a>` : (p.link ? `<a class="underline" href="${p.link}">link</a>` : '');
-        return `<div><p class="font-medium">${p.title}</p><p class="text-sm text-gray-600">${p.authors} — <em>${p.venue || ''}</em> (${p.year || ''})</p><p class="text-sm">${doi}</p></div>`;
-      }
-
-      journals.sort((a,b) => (b.year||0) - (a.year||0));
-      confs.sort((a,b) => (b.year||0) - (a.year||0));
-
-      jwrap.innerHTML = journals.map(itemHTML).join('');
-      cwrap.innerHTML = confs.map(itemHTML).join('');
-    } catch (e) {
-      console.error(e);
-    }
-  });
-</script>
 
   </main>
   <footer class="bg-white border-t">
